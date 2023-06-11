@@ -1,0 +1,14 @@
+Variables
+-> body (color de fondo)
+-> Title > Pokémon Name (contenido)
+-> Title > Number (contenido)
+-> Image > img (src)
+-> Card > Type > Type Chips (crear nodo, content, color de fondo)
+-> Card > Frame 27 > Frame 11 > text (contenido)
+-> Card > Frame 28 > Frame 10 > text (contenido)
+-> Card > Frame 26 > Frame 30 > text (contenido)
+-> Card > about(desc) (contenido)
+-> Card > Base Stats (details) > Data > span (contenido)
+-> Card > Base Stats (details) > Chart > padding (color de fondo, ancho)
+
+Resolver los Types cuando pasa los Pokecards en details

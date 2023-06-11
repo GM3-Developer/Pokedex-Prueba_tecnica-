@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div class="title" id="title">
+        <button></button>
+        <span class="title-text" id="title-text"></span>
+        <span class="number" id="number">#001</span>
+    </div>
+    <div class="imagen" id="imagen">
+        <button class="backward" id="backward"></button>
+        <img id="pokemon">
+        <button class="forward" id="forward"></button>
+    </div>
+    <div class="detail-card" id="detail-card">
+        <div class="type" id="type">
+            <!-- <div class="type-chip" id="grass"><span>Grass</span></div>
+            <div class="type-chip" id="poison"><span>Poison</span></div> -->
+        </div>
+        <div class="about-title" id="about-title">About</div>
+        <div class="attribute" id="attribute">
+            <div id="weight" class="weight">
+                <div class="values" id="values_w">
+                    <img src="../img/icons/weight.png" alt="">
+                    <span></span>
+                </div>
+                <div class="title" id="title_w">Weight</div>
+            </div>
+
+            <div id="divider1"></div>
+
+            <div id="height" class="height">
+                <div class="values" id="values_h">
+                    <img src="../img/icons/height.png" alt="">
+                    <span></span>
+                </div>
+                <div class="title" id="title_h">Height</div>
+            </div>
+            
+            <div id="divider2"></div>
+
+            <div id="moves" class="moves">
+                <div class="values" id="values_m">
+                    <span></span>
+                </div>
+
+                <div class="title" id="title_m">Moves</div>
+            </div>
+        </div>
+        <div class="about-desc" id="about-desc">
+
+        </div>
+        <div class="base_stats" id="base_stats">Base Stats</div>
+        <div class="base_stats_details" id="base_stats_details">
+            <div class="label_stats" id="label_stats">
+                <span>HP</span>
+                <span>ATK</span>
+                <span>DEF</span>
+                <span>SATK</span>
+                <span>SDEF</span>
+                <span>SPD</span>
+            </div>
+            <div id="divider_stats"></div>
+            <div class="data_stats" id="data_stats">
+                <span id="l_hp"></span>
+                <span id="l_atk">049</span>
+                <span id="l_def">049</span>
+                <span id="l_satk">065</span>
+                <span id="l_sdef">065</span>
+                <span id="l_spd">045</span>
+            </div>
+            <div class="chart_stats" id="chart_stats">
+                <div class="slot">
+                    <div class="padding" id="c_hp"></div>
+                    <div class="empty_slot" id="empty_slot"></div>
+                </div>
+                <div class="slot">
+                    <div class="padding" id="c_atk"></div>
+                    <div class="empty_slot" id="empty_slot"></div>
+                </div>
+                <div class="slot">
+                    <div class="padding" id="c_def"></div>
+                    <div class="empty_slot" id="empty_slot"></div>
+                </div>
+                <div class="slot">
+                    <div class="padding" id="c_satk"></div>
+                    <div class="empty_slot" id="empty_slot"></div>
+                </div>
+                <div class="slot">
+                    <div class="padding" id="c_sdef"></div>
+                    <div class="empty_slot" id="empty_slot"></div>
+                </div>
+                <div class="slot">
+                    <div class="padding" id="c_spd"></div>
+                    <div class="empty_slot" id="empty_slot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

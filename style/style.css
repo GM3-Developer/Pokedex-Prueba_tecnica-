@@ -20,6 +20,7 @@
         align-self: stretch;
         flex-grow: 0;
         z-index: 2;
+        box-sizing: border-box;
     }
     /*Frame 29 > Title*/
     div.title{
@@ -137,12 +138,11 @@
     main.list{
         display: grid;
         align-items: flex-start;
-        padding: 24px 12px 0px;
+        padding: 24px 10px 24px 10px;
         gap: 8px;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 
-        width: 352px;
-        height: 524px;
+        
 
         background: #FFFFFF;
 

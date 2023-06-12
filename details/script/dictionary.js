@@ -3,7 +3,7 @@ var pokemon = [
     {
         number: "#001",
         nombre: "Bulbasaur",
-        url_image: "../img/items/400x400/Bulbasaur.png",
+        url_image: "/../../img/items/400x400/Bulbasaur.png",
         color: "#74CB48",
         type: [{
             string:"Grass", color:"#74CB48"}, {string:"Poison", color: "#A43E9E"}
@@ -24,7 +24,7 @@ var pokemon = [
     {
         number: "#004",
         nombre: "Charmander",
-        url_image: "../img/items/400x400/Charmander.png",
+        url_image: "/../../img/items/400x400/Charmander.png",
         color: "#F57D31",
         type: [{
             string: "Fire",
@@ -46,7 +46,7 @@ var pokemon = [
     {
         number: "#007",
         nombre: "Squirtle",
-        url_image: "../img/items/400x400/Squirtle.png",
+        url_image: "/../../img/items/400x400/Squirtle.png",
         color: "#6493EB",
         type: [{
             string: "Water",
@@ -68,7 +68,7 @@ var pokemon = [
     {
         number: "#012",
         nombre: "Butterfree",
-        url_image: "../img/items/400x400/Butterfree.png",
+        url_image: "/../../img/items/400x400/Butterfree.png",
         color: "#A7B723",
         type: [{
             string: "Bug",
@@ -93,7 +93,7 @@ var pokemon = [
     {
         number: "#025",
         nombre: "Pikachu",
-        url_image: "../img/items/400x400/Pikachu.png",
+        url_image: "/../../img/items/400x400/Pikachu.png",
         color: "#F9CF30",
         type: [{
             string: "Electric",
@@ -115,7 +115,7 @@ var pokemon = [
     {
         number: "#092",
         nombre: "Gastly",
-        url_image: "../img/items/400x400/Gastly.png",
+        url_image: "/../../img/items/400x400/Gastly.png",
         color: "#70559B",
         type: [{
             string: "Ghost",
@@ -140,7 +140,7 @@ var pokemon = [
     {
         number: "#132",
         nombre: "Ditto",
-        url_image: "../img/items/400x400/Ditto.png",
+        url_image: "/../../img/items/400x400/Ditto.png",
         color: "#AAA67F",
         type: [{
             string: "Normal",
@@ -162,7 +162,7 @@ var pokemon = [
     {
         number: "#152",
         nombre: "Mew",
-        url_image: "../img/items/400x400/Mew.png",
+        url_image: "/../../img/items/400x400/Mew.png",
         color: "#FB5584",
         type: [{
             string: "Psychic",
@@ -184,7 +184,7 @@ var pokemon = [
     {
         number: "#304",
         nombre: "Aron",
-        url_image: "../img/items/400x400/Aron.png",
+        url_image: "/../../img/items/400x400/Aron.png",
         color: "#B7B9D0",
         type: [{
             string: "Steel",

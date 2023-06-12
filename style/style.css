@@ -89,26 +89,51 @@
     }
 
     /*Frame 29 > Filters > Search Bar*/
-
-    input#search.search{
+    
+    .input-icono{
+        background-image: url('/img/icons/search.png')!important;
+        background-repeat: no-repeat!important;
+        background-position: 10px center!important;
+        background-size: 16px!important;
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 8px 16px 8px 12px;
+        padding: 8px 16px 8px 32px;
         gap: 8px;
-
         width: 280px;
         height: 32px;
-
-        background: #FFFFFF;
-
         box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
         border-radius: 16px;
+        background: #FFFFFF;
+
         box-sizing: border-box;
 
         flex: none;
         order: 0;
         flex-grow: 1;
+        outline: none;
+    }
+
+    .input-icono>button{
+        display: none;
+        background-image: url('/img/icons/cancel.png');
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 16px;
+        width: 17px;
+        height: 16px;
+        border: none;
+    }
+    
+    .input-icono input#search.search{
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .input-icono input#search.search:focus{
+        outline: none;
     }
 
     /*Frame 29 > Filters > Sort by*/
@@ -117,13 +142,17 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+
         padding: 8px;
         gap: 8px;
 
         width: 32px;
         height: 32px;
 
-        background: #FFFFFF;
+        background: no-repeat url('/img/icons/sort_number.png');
+        background-color: #FFFFFF;
+        background-size: 16px;
+        background-position: center;
 
         box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
         border-radius: 16px;
@@ -131,6 +160,8 @@
         flex: none;
         order: 1;
         flex-grow: 0;
+        box-sizing: border-box;
+        border: none;
     }
 
     /*List*/
@@ -294,5 +325,197 @@
         right: 0%;
         top: 0%;
         bottom: 0%;
+    }
+
+    /*Sort card*/
+    div.modal{
+        display: none;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    div.modal>div.content-modal{
+        display: flex;
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0!important;
+        top: 6em;
+        right: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 4px 4px;
+        width: 113px;
+        height: 132px;
+
+        background: #DC0A2D;
+
+        box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+    }
+
+    /*Sort card > Frame 54*/
+
+    div.modal>div.content-modal>div.header-modal{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 16px 20px;
+
+        width: 105px;
+        height: 48px;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        box-sizing: border-box;
+    }
+
+    /*Sort card > Frame 54 > Sort by*/
+
+    div.modal>div.content-modal>div.header-modal>span{
+        width: 47px;
+        height: 16px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    /*Sort card > Frame 55*/
+
+    div.modal>div.content-modal>div.body-modal{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 20px;
+        gap: 16px;
+
+        width: 105px;
+        height: 80px;
+
+        background: #FFFFFF;
+
+        box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        box-sizing: border-box;
+    }
+
+    /*Sort card > Frame 55 > Radio Button(1)*/
+
+    div.modal>div.content-modal>div.body-modal>div.op_number{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+        width: 65px;
+        height: 16px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    /*Sort card > Frame 55 > Radio Button(1) > Radio Button*/
+
+    div.modal>div.content-modal>div.body-modal>div.op_number>input#radio_number{
+        width: 16px;
+        height: 16px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        accent-color: #DC0A2D;
+    }
+
+    /*Sort card > Frame 55 > Radio Button(1) > Label*/
+
+    div.modal>div.content-modal>div.body-modal>div.op_number>label#label_number{
+        width: 41px;
+        height: 16px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 16px;
+
+        color: #1D1D1D;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    /*Sort card > Frame 55 > Radio Button(2)*/
+
+    div.modal>div.content-modal>div.body-modal>div.op_name{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+        width: 65px;
+        height: 16px;
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    /*Sort card > Frame 55 > Radio Button(2) > Radio Button*/
+
+    div.modal>div.content-modal>div.body-modal>div.op_name>input#radio_name{
+        width: 16px;
+        height: 16px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        accent-color: #DC0A2D;
+    }
+
+    /*Sort card > Frame 55 > Radio Button(2) > Label*/
+
+    div.modal>div.content-modal>div.body-modal>div.op_name>label#label_name{
+        width: 31px;
+        height: 16px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 16px;
+
+        color: #1D1D1D;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
     }
 }

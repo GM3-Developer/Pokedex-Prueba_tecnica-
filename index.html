@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokédex</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="script/dictionary.js"></script>
+    <script src="script/functions.js"></script>
     <script src="script/script.js"></script>
 </head>
 <body>
@@ -15,7 +17,10 @@
             <span>Pokédex</span>
         </div>
         <div class="filters" id="filters">
-            <input class="search" id="search" type="text" placeholder="Search">
+            <div class="input-icono" id="input-icono">
+                <input class="search" id="search" type="text" placeholder="Search">
+                <button id="cancel"></button>
+            </div>
             <button class="sort" id="sort"></button>
         </div>
     </Header>
@@ -26,5 +31,20 @@
             <section class="name"><span id="name"></span></section>
         </article>-->
     </main>
+    <div class="modal" id="modal">
+        <div class="content-modal" id="content-modal">
+            <div class="header-modal">
+                <span>Sort by:</span>
+            </div>
+            <div class="body-modal">
+                <div class="op_number">
+                    <input type="radio" name="" id="radio_number" checked><label id="label_number" for="radio_number">Number</label>
+                </div>
+                <div class="op_name">
+                    <input type="radio" name="" id="radio_name"><label id="label_name" for="radio_name">Name</label>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,59 +1,4 @@
 window.addEventListener('DOMContentLoaded', ()=>{
-    var id = document.querySelectorAll('.id');
-    var name = document.querySelectorAll('.name');
-    var imagen = document.querySelectorAll('.image');
-
-
-    //001
-    var pokemon = [
-        {
-            number: "#001",
-            nombre: "Bulbasaur",
-            url_image: "img/items/144x144/Bulbasaur.png"
-        },
-        {
-            number: "#004",
-            nombre: "Charmander",
-            url_image: "img/items/144x144/Charmander.png"
-        },
-        {
-            number: "#007",
-            nombre: "Squirtle",
-            url_image: "img/items/144x144/Squirtle.png"
-        },
-        {
-            number: "#012",
-            nombre: "Butterfree",
-            url_image: "img/items/144x144/Butterfree.png"
-        },
-        {
-            number: "#025",
-            nombre: "Pikachu",
-            url_image: "img/items/144x144/Pikachu.png"
-        },
-        {
-            number: "#092",
-            nombre: "Gastly",
-            url_image: "img/items/144x144/Gastly.png"
-        },
-        {
-            number: "#132",
-            nombre: "Ditto",
-            url_image: "img/items/144x144/Ditto.png"
-        },
-        {
-            number: "#152",
-            nombre: "Mew",
-            url_image: "img/items/144x144/Mew.png"
-        },
-        {
-            number: "#304",
-            nombre: "Aron",
-            url_image: "img/items/144x144/Aron.png"
-        }
-    ];
-    
-    console.log(pokemon[2].number);
 
     for (let i = 0; i < pokemon.length; i++) {
         //Crea un nodo <article id="n"> dentro de <main class="list" id="list">
@@ -93,9 +38,18 @@ window.addEventListener('DOMContentLoaded', ()=>{
     
     localStorage.clear();
     for (let i = 0; i < pokemon.length; i++) {
-        document.getElementById(i+1).addEventListener("click", ()=>{
-            localStorage.setItem("pos", JSON.stringify(i));
-            location.href = "details/index.html";
-        });
+        document.getElementById(i+1).addEventListener("click", route);
     }
+
+    document.getElementById("search").addEventListener("keyup", searchKeyUp);
+
+    document.getElementById("search").addEventListener("change", searchChange);
+    
+    document.getElementById("cancel").addEventListener("click", cancel);
+
+    document.getElementById("sort").addEventListener("click", sort);
+
+    document.getElementById("radio_number").addEventListener("click", radio_number);
+    document.getElementById("radio_name").addEventListener("click", radio_name);
+
 });

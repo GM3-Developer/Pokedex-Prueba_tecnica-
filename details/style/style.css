@@ -21,7 +21,7 @@
     } */
 
     body {
-        background-image: url("/../../img/background/Pokeball.png");
+        background-image: url("../../img/background/Pokeball.png");
         background-position: top 8px right 8px;
         background-size: 208px;
         background-repeat: no-repeat;
@@ -54,7 +54,7 @@
     div.title>button {
         background-color: transparent;
         border-color: transparent;
-        background-image: url("/../../img/icons/back.png");
+        background-image: url("../../img/icons/back.png");
         background-size: cover;
         width: 32px;
         height: 32px;
@@ -136,7 +136,7 @@
     div.imagen>button.backward {
         background-color: transparent;
         border-color: transparent;
-        background-image: url("/../../img/icons/backward.png");
+        background-image: url("../../img/icons/backward.png");
         background-size: cover;
         width: 24px;
         height: 24px;
@@ -167,7 +167,7 @@
     div.imagen>button.forward {
         background-color: transparent;
         border-color: transparent;
-        background-image: url("/../../img/icons/forward.png");
+        background-image: url("../../img/icons/forward.png");
         background-size: cover;
         width: 24px;
         height: 24px;

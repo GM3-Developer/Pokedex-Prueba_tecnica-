@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
     for (let i = 0; i < pokemon.length; i++) {
         document.getElementById(i+1).addEventListener("click", ()=>{
             localStorage.setItem("pos", JSON.stringify(i));
-            location.href = "/details/index.html";
+            location.href = "details/index.html";
         });
     }
 

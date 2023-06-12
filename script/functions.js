@@ -58,7 +58,7 @@ function radio_number(){
     body.style.height = "auto";
     body.style.overflow = "visible";
 
-    document.getElementById("sort").style.background = "no-repeat url('/img/icons/sort_number.png')";
+    document.getElementById("sort").style.background = "no-repeat url('img/icons/sort_number.png')";
     document.getElementById("sort").style.backgroundColor = "#FFFFFF";
     document.getElementById("sort").style.backgroundSize = "16px";
     document.getElementById("sort").style.backgroundPosition = "center";
@@ -73,7 +73,7 @@ function radio_name(){
     body.style.height = "auto";
     body.style.overflow = "visible";
 
-    document.getElementById("sort").style.background = "no-repeat url('/img/icons/sort_name.png')";
+    document.getElementById("sort").style.background = "no-repeat url('img/icons/sort_name.png')";
     document.getElementById("sort").style.backgroundColor = "#FFFFFF";
     document.getElementById("sort").style.backgroundSize = "16px";
     document.getElementById("sort").style.backgroundPosition = "center";

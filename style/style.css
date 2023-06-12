@@ -91,7 +91,7 @@
     /*Frame 29 > Filters > Search Bar*/
     
     .input-icono{
-        background-image: url('/img/icons/search.png')!important;
+        background-image: url('../../img/icons/search.png')!important;
         background-repeat: no-repeat!important;
         background-position: 10px center!important;
         background-size: 16px!important;
@@ -116,7 +116,7 @@
 
     .input-icono>button{
         display: none;
-        background-image: url('/img/icons/cancel.png');
+        background-image: url('../../img/icons/cancel.png');
         background-color: transparent;
         background-repeat: no-repeat;
         background-position: right center;
@@ -149,7 +149,7 @@
         width: 32px;
         height: 32px;
 
-        background: no-repeat url('/img/icons/sort_number.png');
+        background: no-repeat url('../../img/icons/sort_number.png');
         background-color: #FFFFFF;
         background-size: 16px;
         background-position: center;

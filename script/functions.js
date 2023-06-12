@@ -1,7 +1,4 @@
-function route(){
-    localStorage.setItem("pos", JSON.stringify(i));
-    location.href = "/details/index.html";
-}
+
 function searchKeyUp(e){
     var buscar = e.target.value;
     var cate = "";

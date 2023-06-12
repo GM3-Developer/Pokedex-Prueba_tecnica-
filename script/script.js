@@ -38,7 +38,10 @@ window.addEventListener('DOMContentLoaded', ()=>{
     
     localStorage.clear();
     for (let i = 0; i < pokemon.length; i++) {
-        document.getElementById(i+1).addEventListener("click", route);
+        document.getElementById(i+1).addEventListener("click", ()=>{
+            localStorage.setItem("pos", JSON.stringify(i));
+            location.href = "/details/index.html";
+        });
     }
 
     document.getElementById("search").addEventListener("keyup", searchKeyUp);

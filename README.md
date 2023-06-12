@@ -43,8 +43,8 @@ En Blisk me ofrece un listado de dispositivos mobiles, tablets y escritorio para
   
 </details>
 
-[Sitio web para consumir el proyecto (GitHub)](https://gm3-developer.github.io/Pokedex-Prueba_tecnica-/)
-[Sitio web para consumir el proyecto (Surge.sh)](http://pokedex.gm3developer.surge.sh/)
+- [Sitio web para consumir el proyecto (GitHub)](https://gm3-developer.github.io/Pokedex-Prueba_tecnica-/)
+- [Sitio web para consumir el proyecto (Surge.sh)](http://pokedex.gm3developer.surge.sh/)
 
 # Licencia
 Consulte el archivo de [LICENCIA](LICENSE) para conocer los derechos y limitaciones de la licencia (MIT).
